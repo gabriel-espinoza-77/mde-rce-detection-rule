@@ -77,7 +77,7 @@ Configure automated responses to take immediate action when the rule is triggere
 Review all configuration details and submit the rule for activation.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9b780a4d-6d4f-43d2-a19d-1317fae314dd" width="600"/>
+  <img src="https://github.com/user-attachments/assets/9b780a4d-6d4f-43d2-a19d-1317fae314dd" width="550"/>
 </p>
 
 ---
@@ -112,19 +112,15 @@ Once triggered, an alert will appear under the detection rule's details page. Cl
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5f3ad75f-74d2-4a92-a14a-4ca8313db507" width="450"/>
+  <img src="https://github.com/user-attachments/assets/5f3ad75f-74d2-4a92-a14a-4ca8313db507" width="1000"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/149f887d-4495-400c-89aa-6c67db695c23" width="450"/>
+  <img src="https://github.com/user-attachments/assets/138dae23-4aaf-4620-919e-17f011318aea" width="850"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/138dae23-4aaf-4620-919e-17f011318aea" width="450"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3ee8a503-a8f0-41b8-b82c-83a68478b77f" width="450"/>
+  <img src="https://github.com/user-attachments/assets/3ee8a503-a8f0-41b8-b82c-83a68478b77f" width="850"/>
 </p>
 
 ---
@@ -134,10 +130,11 @@ Once triggered, an alert will appear under the detection rule's details page. Cl
 Attempting to log in to the isolated VM will result in failure, confirming successful containment. If no further suspicious activity is detected, the device can be manually released from isolation via the MDE device page.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4209f01d-8f68-4859-84b7-453c4a65e484" width="450"/>
+  <img src="https://github.com/user-attachments/assets/149f887d-4495-400c-89aa-6c67db695c23" width="450"/>
 </p>
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/4209f01d-8f68-4859-84b7-453c4a65e484" width="550"/>
   <img src="https://github.com/user-attachments/assets/d10b98be-e412-4d1f-aa03-0188e15620fd" width="450"/>
 </p>
 
@@ -149,62 +146,7 @@ This lab demonstrates a complete workflow for detecting and responding to potent
 
 ---
 
-**Author:** [Gabriel Espinoza](https://github.com/gabriel-espinoza-77)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Author:** Gabriel Espinoza
 
 
 
