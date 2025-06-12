@@ -68,7 +68,7 @@ This step identifies affected assets based on the query output, enabling automat
 
 ### Automated Actions
 
-Configure automated responses. In this scenario, **device isolation** is selected to immediately contain the threat.
+Configure automated responses to take immediate action when the rule is triggered. In this scenario, **device isolation** is selected to contain the threat, and an **investigation package** is collected to support forensic analysis and post-incident review.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2bb45148-feb5-402b-a23e-728d35106224" width="450"/>
