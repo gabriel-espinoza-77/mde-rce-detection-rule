@@ -33,7 +33,7 @@ DeviceProcessEvents
 ```
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bc663ad5-6843-4123-a435-c6836fe1c9fb" width="450"/>
+  <img src="https://github.com/user-attachments/assets/bc663ad5-6843-4123-a435-c6836fe1c9fb" width="600"/>
 </p>
 
 ---
@@ -43,7 +43,7 @@ DeviceProcessEvents
 Click **"Create detection rule"** on the right side of the query window.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/de92a563-158b-457d-ba9a-85426ec89270" width="450"/>
+  <img src="https://github.com/user-attachments/assets/de92a563-158b-457d-ba9a-85426ec89270" width="250"/>
 </p>
 
 ### General Settings
@@ -51,39 +51,33 @@ Click **"Create detection rule"** on the right side of the query window.
 Fill in the required fields (rule name, severity, description, etc.) to define the rule.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/20f0f0ae-070f-4cb6-be7c-1f2390590022" width="450"/>
+  <img src="https://github.com/user-attachments/assets/20f0f0ae-070f-4cb6-be7c-1f2390590022" width="650"/>
 </p>
-
----
 
 ### Impacted Entities
 
 This step identifies affected assets based on the query output, enabling automation and alert context.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a368a4a3-9269-4163-b150-58e02d4391cf" width="450"/>
+  <img src="https://github.com/user-attachments/assets/a368a4a3-9269-4163-b150-58e02d4391cf" width="600"/>
 </p>
-
----
 
 ### Automated Actions
 
 Configure automated responses to take immediate action when the rule is triggered. In this scenario, **device isolation** is selected to contain the threat, and an **investigation package** is collected to support forensic analysis and post-incident review.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2bb45148-feb5-402b-a23e-728d35106224" width="450"/>
+  <img src="https://github.com/user-attachments/assets/2bb45148-feb5-402b-a23e-728d35106224" width="600"/>
 </p>
 
 > **Note:** Full isolation is recommended to prevent further malicious activity.
-
----
 
 ### Review and Submit
 
 Review all configuration details and submit the rule for activation.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9b780a4d-6d4f-43d2-a19d-1317fae314dd" width="450"/>
+  <img src="https://github.com/user-attachments/assets/9b780a4d-6d4f-43d2-a19d-1317fae314dd" width="600"/>
 </p>
 
 ---
@@ -94,7 +88,7 @@ After submission, the rule appears in the **Detection Rules** dashboard. Selecti
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/270233a8-f4e9-4ab4-9aaa-0bb6ef50bac5" width="450"/>
-  <img src="https://github.com/user-attachments/assets/8fc98915-4082-45e0-8f3d-0bfebe949b3f" width="550"/>
+  <img src="https://github.com/user-attachments/assets/8fc98915-4082-45e0-8f3d-0bfebe949b3f" width="750"/>
 </p>
 
 ---
@@ -104,14 +98,14 @@ After submission, the rule appears in the **Detection Rules** dashboard. Selecti
 To test the detection, access the test VM (`io-test-vm`) and execute the PowerShell command from earlier.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6ef9afc5-46f1-4532-bf6f-5b54d5296498" width="450"/>
+  <img src="https://github.com/user-attachments/assets/6ef9afc5-46f1-4532-bf6f-5b54d5296498" width="900"/>
 </p>
 
 ---
 
 ## Step 5: Reviewing Alerts
 
-Once triggered, an alert will appear in the **Detection Rule** dashboard. Clicking on the alert shows the full event timeline, impacted entity, actions taken (e.g., isolation), and command details.
+Once triggered, an alert will appear under the detection rule's details page. Clicking on the alert shows, impacted entity, actions taken (e.g., isolation), and the full event timeline.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9e7f0edf-a667-4fdf-97c6-92bbc763a871" width="1000"/>
