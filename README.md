@@ -76,7 +76,7 @@ Once the code has been run on the `io-test-vm` device, there will be an alert sh
   <img src="https://github.com/user-attachments/assets/9e7f0edf-a667-4fdf-97c6-92bbc763a871" width="1000"/>
 </p>
 
-If you press on the alert, it will show the exact activity that was done before the code was executed. Here shows the desdcirptiobn of the alert, "Actions taken" on the impacted asset and as observed below, the device was isolated.  
+If you press on the alert, it shows the desdcirptiobn of the alert, "Actions taken" on the impacted asset and as observed below and the isolation of the asset. It will also show the exact activity that was done before the code was executed in relation to what time the activity occured. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5f3ad75f-74d2-4a92-a14a-4ca8313db507" width="450"/>
@@ -96,15 +96,14 @@ If you press on the alert, it will show the exact activity that was done before 
   <img src="https://github.com/user-attachments/assets/3ee8a503-a8f0-41b8-b82c-83a68478b77f" width="450"/>
 </p>
 
+Now try logging in to the device involved in the RCE. Youll observe that the device is inaccessible because of the detection rule isolating it. Now from the page of the device, you can manually release it from isolation if you know that is no more suspious activity occuring because of the RCE.
 
 <p align="center">
-  <img src="" width="450"/>
+  <img src="https://github.com/user-attachments/assets/4209f01d-8f68-4859-84b7-453c4a65e484" width="450"/>
 </p>
 
-
-
 <p align="center">
-  <img src="" width="450"/>
+  <img src="https://github.com/user-attachments/assets/d10b98be-e412-4d1f-aa03-0188e15620fd" width="450"/>
 </p>
 
 
