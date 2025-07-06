@@ -19,9 +19,9 @@ Start-Process 'C:\ProgramData\7z2408-x64.exe' -ArgumentList '/S' -Wait"
 
 ---
 
-## Step 1: Creating the Detection Query
+## Building the Detection Query
 
-In the **Advanced Hunting** dashboard within MDE, a KQL query is written to identify suspicious PowerShell behavior:
+Within the **Advanced Hunting** dashboard in MDE, a KQL query is written to identify suspicious PowerShell behavior. The query focuses on identifying executions involving `Invoke-WebRequest` and `Start-Process`, particularly from non-system accounts on the `io-test-vm` machine.:
 
 ```kql
 let target_machine = "io-test-vm";
