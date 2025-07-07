@@ -38,33 +38,33 @@ DeviceProcessEvents
 
 ---
 
-## Step 2: Creating the Detection Rule
+## Defining a Detection Rule
 
-Click **"Create detection rule"** on the right side of the query window.
+MDE provides the option to convert the query into a detection rule, allowing for future instances of the same behaviour to trigger alerts and initiate response actions.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/de92a563-158b-457d-ba9a-85426ec89270" width="250"/>
 </p>
 
-### General Settings
+### Configuration Overview
 
-Fill in the required fields (rule name, severity, description, etc.) to define the rule.
+Required fields such as rule name, severity level, and description are specified to define how the rule should behave and be organized within the system.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/20f0f0ae-070f-4cb6-be7c-1f2390590022" width="650"/>
 </p>
 
-### Impacted Entities
+### Mapping Impacted Entities
 
-This step identifies affected assets based on the query output, enabling automation and alert context.
+Based on the query logic, the rule automatically links alerts to the relevant device or user information.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a368a4a3-9269-4163-b150-58e02d4391cf" width="600"/>
 </p>
 
-### Automated Actions
+### Assigning Automated Responses
 
-Configure automated responses to take immediate action when the rule is triggered. In this scenario, **device isolation** is selected to contain the threat, and an **investigation package** is collected to support forensic analysis and post-incident review.
+Automated actions are configured to take effect upon rule activation. In this case, device isolation is selected to contain the threat, and an investigation package is collected to support forensic review.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2bb45148-feb5-402b-a23e-728d35106224" width="600"/>
@@ -72,9 +72,9 @@ Configure automated responses to take immediate action when the rule is triggere
 
 > **Note:** Full isolation is recommended to prevent further malicious activity.
 
-### Review and Submit
+### Finalizing the Rule
 
-Review all configuration details and submit the rule for activation.
+All configurations are reviewed prior to submission. Once confirmed, the detection rule is activated.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9b780a4d-6d4f-43d2-a19d-1317fae314dd" width="550"/>
@@ -82,9 +82,11 @@ Review all configuration details and submit the rule for activation.
 
 ---
 
-## Step 3: Viewing the Detection Rule
+## Monitoring the Detection Rule
 
 After submission, the rule appears in the **Detection Rules** dashboard. Selecting the rule reveals its history, alert triggers, and automated actions taken.
+
+Once active, the detection rule appears in the **Detection Rules** dashboard. Details such as alert history, associated entities, and response actions can be reviewed from this view.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/270233a8-f4e9-4ab4-9aaa-0bb6ef50bac5" width="450"/>
