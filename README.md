@@ -1,8 +1,10 @@
 # Remote Code Execution Detection via PowerShell (MDE)
 
-This project demonstrates the creation and validation of a custom detection rule in **Microsoft Defender for Endpoint (MDE)** to detect potential **Remote Code Execution (RCE)** via PowerShell. Once triggered, the detection rule automatically isolates the affected virtual machine to prevent further malicious activity.
+This demonstration covers the creation and validation of a custom detection rule in **Microsoft Defender for Endpoint (MDE)** designed to identify potential **Remote Code Execution (RCE)** via PowerShell. Once triggered, the detection rule automatically isolates the affected virtual machine to prevent further malicious activity.
 
 The rule targets behavior commonly associated with RCE, where PowerShell is used to download and execute an external file — in this case, a silent installation of the 7-Zip application using `Invoke-WebRequest` and `Start-Process`.
+
+The demonstration will use a virutal machine named `io-test-vm`.
 
 ---
 
@@ -21,7 +23,7 @@ Start-Process 'C:\ProgramData\7z2408-x64.exe' -ArgumentList '/S' -Wait"
 
 ## Building the Detection Query
 
-Within the **Advanced Hunting** dashboard in MDE, a KQL query is written to identify suspicious PowerShell behavior. The query focuses on identifying executions involving `Invoke-WebRequest` and `Start-Process`, particularly from non-system accounts on the `io-test-vm` machine.:
+Within the **Advanced Hunting** dashboard in MDE, a KQL query is written to identify suspicious PowerShell behavior. The query focuses on identifying executions involving `Invoke-WebRequest` and `Start-Process`, particularly from non-system accounts on the `io-test-vm` machine.
 
 ```kql
 let target_machine = "io-test-vm";
@@ -84,8 +86,6 @@ All configurations are reviewed prior to submission. Once confirmed, the detecti
 
 ## Monitoring the Detection Rule
 
-After submission, the rule appears in the **Detection Rules** dashboard. Selecting the rule reveals its history, alert triggers, and automated actions taken.
-
 Once active, the detection rule appears in the **Detection Rules** dashboard. Details such as alert history, associated entities, and response actions can be reviewed from this view.
 
 <p align="center">
@@ -95,9 +95,9 @@ Once active, the detection rule appears in the **Detection Rules** dashboard. De
 
 ---
 
-## Step 4: Triggering the Rule
+## Validating Detection and Response
 
-To test the detection, access the test VM (`io-test-vm`) and execute the PowerShell command from earlier.
+To validate the detection rule, the PowerShell command is run on `io-test-vm`.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6ef9afc5-46f1-4532-bf6f-5b54d5296498" width="900"/>
@@ -105,37 +105,25 @@ To test the detection, access the test VM (`io-test-vm`) and execute the PowerSh
 
 ---
 
-## Step 5: Reviewing Alerts
+## Reviewing Alert Details
 
-Once triggered, an alert will appear under the detection rule's details page. Clicking on the alert shows, impacted entity, actions taken (e.g., isolation), and the full event timeline.
+When the rule is triggered, MDE generates an alert that includes the impacted device, the automated actions taken (e.g., isolation), and the full timeline of observed activity.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9e7f0edf-a667-4fdf-97c6-92bbc763a871" width="1000"/>
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/5f3ad75f-74d2-4a92-a14a-4ca8313db507" width="1000"/>
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/138dae23-4aaf-4620-919e-17f011318aea" width="850"/>
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/3ee8a503-a8f0-41b8-b82c-83a68478b77f" width="850"/>
 </p>
 
 ---
 
-## Step 6: Verifying Isolation and Remediation
+## Confirming Isolation and Recovery
 
-Attempting to log in to the isolated VM will result in failure, confirming successful containment. If no further suspicious activity is detected, the device can be manually released from isolation via the MDE device page.
+Following isolation, any login attempt to the compromised device fails, confirming containment. The device can later be released from isolation manually if no further threats are detected.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/149f887d-4495-400c-89aa-6c67db695c23" width="450"/>
-</p>
-
-<p align="center">
   <img src="https://github.com/user-attachments/assets/4209f01d-8f68-4859-84b7-453c4a65e484" width="550"/>
   <img src="https://github.com/user-attachments/assets/d10b98be-e412-4d1f-aa03-0188e15620fd" width="450"/>
 </p>
@@ -144,7 +132,7 @@ Attempting to log in to the isolated VM will result in failure, confirming succe
 
 ## Summary
 
-This lab demonstrates a complete workflow for detecting and responding to potential remote code execution activity in Microsoft Defender for Endpoint. It includes simulating an RCE attack using PowerShell, creating a detection rule using KQL, and validating automated isolation as a containment response. This project showcases skills in threat simulation, detection engineering, and endpoint response automation.
+This lab demonstrates a complete workflow for creating a detection rule to identify and respond to potential remote code execution activity in Microsoft Defender for Endpoint. It includes simulating an RCE attack using PowerShell, creating a detection rule using KQL, and validating automated isolation as a containment response. This project showcases skills in threat simulation, detection engineering, and endpoint response automation.
 
 ---
 
